@@ -20,7 +20,7 @@ class Interviewer:
         audio_frames: List that holds the transcription data of the user.
     """
     def __init__(self):
-        self.client = genai.Client(api_key="AQ.Ab8RN6L1bgbvqXfjEpPPj9ZmH9sF7W_t68X2BrELfTZhOjYpuQ", http_options=types.HttpOptions( # The API key is only hard-coded for the hackathon, will be protected once I develop it more after :)
+        self.client = genai.Client(api_key="", http_options=types.HttpOptions( # The API key is only hard-coded for the hackathon, will be protected once I develop it more after :)
         api_version="v1beta"))
         sys_instructions = ""
         with open("interviewer_system_instructions", 'r') as f:
